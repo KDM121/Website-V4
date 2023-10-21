@@ -16,12 +16,21 @@ export default function Home() {
       <main>
         <div className="hero min-h-screen bg-gradient-to-b from-base-200 to-slate-800">
           <div className="hero-content text-center">
-            <a className="absolute top-0 right-0 m-4  btn-accent py-2 px-4 rounded-full">
-              Remote
+            <a
+              className="absolute top-0 left-0 m-4 btn-accent py-2 px-4 rounded-full"
+              href="/support"
+            >
+              Support
+            </a>
+            <a
+              href="https://github.com/KDM121/"
+              className="absolute top-0 right-0 m-4 py-2 px-4 btn-rounded btn-ghost rounded-full"
+            >
+              <img src="/github.png" className="w-9 h-9"></img>
             </a>
             <div className="max-w-md">
-              <h1 className="text-7xl font-bold pb-3">Hello there</h1>
-              <h1 className="text-5xl font-bold pb-3">Welcome to my website</h1>
+              <h1 className="text-7xl font-bold pb-3">Hello,</h1>
+              <h1 className="text-5xl font-bold pb-3">Website.</h1>
               <Link
                 to="Overview"
                 smooth={true}
@@ -75,7 +84,7 @@ export default function Home() {
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">Wiki</h2>
-                    <p>My brain on a wiki and my docker composes</p>
+                    <p>Useful commands and docker composes</p>
                     <div className="card-actions justify-end">
                       <a
                         className="btn btn-primary"
@@ -89,9 +98,12 @@ export default function Home() {
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">Contact</h2>
-                    <p>I will 100% not respond to you</p>
+                    <p>5% Chance of response</p>
                     <div className="card-actions justify-end">
-                      <a className="btn btn-primary" href="/contact">
+                      <a
+                        className="btn btn-primary"
+                        href="mailto:website@mcdonnell.cc"
+                      >
                         Try anyway
                       </a>
                     </div>
@@ -112,17 +124,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <footer className="footer footer-center p-4 text-base-content rounded bg-slate-700">
-          <nav>
-            <div className="grid grid-flow-col gap-4">
-              <div>
-                <img src="/github.svg" alt="github" />
-              </div>
-            </div>
-          </nav>
-          <nav className="grid grid-flow-col gap-4">
-            <a className="link link-hover" href="/">
-              Home
+        {/* Footer */}
+        <footer className="footer footer-center p-10 bg-slate-700 text-base-content rounded">
+          <nav className="grid grid-flow-col gap-4 text-md">
+            <a className="link link-hover" href="/remote">
+              Remote
             </a>
             <a className="link link-hover" href="/projects">
               Projects
@@ -139,7 +145,7 @@ export default function Home() {
             >
               Wiki
             </a>
-            <a className="link link-hover" href="/contact">
+            <a className="link link-hover" href="/mailto:website@mcdonnell.cc">
               Contact
             </a>
             <a className="link link-hover" href="/">
