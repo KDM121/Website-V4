@@ -12,23 +12,21 @@ export default function Home() {
         <meta name="description" content="Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-          src="https://kit.fontawesome.com/3fd1789599.js"
-          crossorigin="anonymous"
-        ></script>
       </Head>
       <main>
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-gradient-to-b from-base-200 to-slate-800">
           <div className="hero-content text-center">
+            <a className="absolute top-0 right-0 m-4  btn-accent py-2 px-4 rounded-full">
+              Remote
+            </a>
             <div className="max-w-md">
               <h1 className="text-7xl font-bold pb-3">Hello there</h1>
               <h1 className="text-5xl font-bold pb-3">Welcome to my website</h1>
               <Link
                 to="Overview"
                 smooth={true}
-                duration={500}
-                offset={-50}
-                className="btn btn-ghost border-2 border-white bg-slate-600 btn-circle text-4xl"
+                duration={750}
+                className="btn btn-ghost border-2 border-white bg-clear btn-circle text-4xl"
               >
                 ⇩
               </Link>
@@ -38,9 +36,9 @@ export default function Home() {
         <div>
           {/*Section 1*/}
           <h1 id="Overview"></h1>
-          <div className="hero min-h-screen bg-base-200">
+          <div className="hero min-h-screen bg-gradient-to-b from-slate-800 to-slate-700">
             <div className="hero-content text-center">
-              <div class="grid gap-4 grid-cols-2">
+              <div className="grid gap-4 grid-cols-2">
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">Projects</h2>
@@ -114,11 +112,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded border-t-2 border-neutral">
+        <footer className="footer footer-center p-4 text-base-content rounded bg-slate-700">
           <nav>
             <div className="grid grid-flow-col gap-4">
-              <i className="fa-brands fa-github text-3xl"></i>
-              <i className="fa-regular fa-envelope text-3xl"></i>
+              <div>
+                <img src="/github.svg" alt="github" />
+              </div>
             </div>
           </nav>
           <nav className="grid grid-flow-col gap-4">
