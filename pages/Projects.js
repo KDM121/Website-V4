@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Website.</title>
+        <title>Projects.</title>
         <meta name="description" content="Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -121,7 +121,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="footer footer-center p-10 bg-slate-700 text-base-content rounded">
           <nav className="grid grid-flow-col gap-4 text-md">
-            <a className="link link-hover" href="/remote">
+            <a className="link link-hover" href="/support">
               Remote
             </a>
             <a className="link link-hover" href="/projects">

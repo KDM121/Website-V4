@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Website.</title>
+        <title>Support.</title>
         <meta name="description" content="Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           {/*Section 1*/}
           <h1 id="Overview"></h1>
-          <div className="hero min-h-screen bg-gradient-to-b from-slate-800 to-slate-700">
+          <div className="hero min-h-screen bg-gradient-to-b from-slate-900 to-slate-600">
             <a
               className="absolute top-0 left-0 m-4 btn-accent py-2 px-4 rounded-full"
               href="/"
@@ -29,9 +29,13 @@ export default function Home() {
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">RustDesk</h2>
-                    <p>Remote connect into desktop.</p>
+                    <p>Remote connect into desktop for support.</p>
                     <div className="card-actions justify-end">
-                      <a className="btn btn-primary" href="/projects">
+                      <a
+                        className="btn btn-primary"
+                        download
+                        href="/rustdesk.exe"
+                      >
                         Download
                       </a>
                     </div>
@@ -42,9 +46,9 @@ export default function Home() {
           </div>
         </div>
         {/* Footer */}
-        <footer className="footer footer-center p-10 bg-slate-700 text-base-content rounded">
+        <footer className="footer footer-center p-10 bg-slate-600 text-base-content rounded">
           <nav className="grid grid-flow-col gap-4 text-md">
-            <a className="link link-hover" href="/remote">
+            <a className="link link-hover" href="/support">
               Remote
             </a>
             <a className="link link-hover" href="/projects">
