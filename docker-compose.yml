@@ -1,6 +1,13 @@
-version: "3"
+version: '3'
+
 services:
-  web:
-    build: .
+  app:
+    image: node:18-alpine
+    command: sh -c "yarn install && yarn run dev"
     ports:
-      - "3000:3000"
+      - 3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      NEXT_PUBLIC_VERCEL_URL: http://localhost:3000
