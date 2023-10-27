@@ -145,7 +145,7 @@ export default function Home() {
             >
               Wiki
             </a>
-            <a className="link link-hover" href="/mailto:website@mcdonnell.cc">
+            <a className="link link-hover" href="mailto:website@mcdonnell.cc">
               Contact
             </a>
             <a className="link link-hover" href="/">
